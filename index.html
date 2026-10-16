@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manuais Acquanativa</title>
+<style>
+  :root { --bg: #fff; --fg: #1d2a33; --muted: #5f6f7a; --line: #e2e8ec; --link: #0b6e99; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12181c; --fg: #e4eaee; --muted: #93a3ad; --line: #26323a; --link: #5cc0ea; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+  header img { height: 3rem; }
+  h1 { font-size: 1.6rem; margin: 1rem 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  p { margin: .5rem 0; }
+  .muted, li span { color: var(--muted); font-size: .9rem; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem;
+       padding: .7rem 0; border-bottom: 1px solid var(--line); }
+  a { color: var(--link); }
+  li a { font-weight: 600; text-decoration: none; }
+  li a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+  <header><img src="logo.png" alt="Acquanativa"></header>
+  <h1>Manuais dos equipamentos</h1>
+  <p class="muted">Versão atual de cada manual. Atualizado em 16/10/2026.</p>
+  <ul>
+      <li><a href="pdf/AcquaLink.pdf">AcquaLink</a><span>12 páginas · 235 KB</span></li>
+      <li><a href="pdf/AcquaMeter.pdf">AcquaMeter</a><span>11 páginas · 229 KB</span></li>
+      <li><a href="pdf/AcquaProbe-APE.pdf">AcquaProbe-APE</a><span>12 páginas · 203 KB</span></li>
+      <li><a href="pdf/AcquaProbe-AQ.pdf">AcquaProbe-AQ</a><span>15 páginas · 306 KB</span></li>
+      <li><a href="pdf/AcquaSensor.pdf">AcquaSensor</a><span>12 páginas · 586 KB</span></li>
+      <li><a href="pdf/AcquaSensor-Clorofila.pdf">AcquaSensor Clorofila</a><span>13 páginas · 269 KB</span></li>
+      <li><a href="pdf/AcquaSensor-CO2.pdf">AcquaSensor CO2</a><span>13 páginas · 586 KB</span></li>
+      <li><a href="pdf/AcquaSensor-Cor.pdf">AcquaSensor Cor</a><span>15 páginas · 565 KB</span></li>
+      <li><a href="pdf/AcquaSensor-Turbidez.pdf">AcquaSensor Turbidez</a><span>13 páginas · 574 KB</span></li>
+  </ul>
+
+  <h2>Exemplos em Python</h2>
+  <p>14 scripts comentados para procurar, ler, mudar o endereço e calibrar
+     AcquaSensor, OD óptico, AcquaProbe-AQ e AcquaLink.</p>
+  <p><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/tree/main/python">Ver os scripts e as instruções</a>
+     · <a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/archive/refs/heads/main.zip">Baixar tudo (.zip)</a></p>
+
+  <h2>Suporte</h2>
+  <p><a href="mailto:suporte@acquanativa.com.br">suporte@acquanativa.com.br</a></p>
+</main>
+</body>
+</html>
