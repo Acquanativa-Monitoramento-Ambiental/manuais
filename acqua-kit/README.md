@@ -1,6 +1,6 @@
-# Módulos I²C (AN-PCB)
+# AcquaKit — módulos I²C
 
-Módulos de interface com saída **I²C** (placas AN-PCB), para ligar eletrodos
+Módulos AcquaKit: interfaces com saída **I²C** para ligar eletrodos
 de OD, pH e ORP a Arduino, ESP32, Raspberry Pi e outros microcontroladores.
 Todos usam os mesmos comandos de texto (`Info`, `R`, `Cal,...`, `I2C,<n>`).
 

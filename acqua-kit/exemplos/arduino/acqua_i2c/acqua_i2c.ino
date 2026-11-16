@@ -1,6 +1,6 @@
 /*
  * acqua_i2c.ino — terminal serial para os módulos I²C Acquanativa
- * (ACQUA-OD, ACQUA-pH e ACQUA-ORP, placas AN-PCB, firmware 1.1).
+ * (ACQUA-OD, ACQUA-pH e ACQUA-ORP, AcquaKit, firmware 1.1).
  *
  * Use para conferir a ligação, ler, calibrar e mudar o endereço sem escrever
  * código: digite o comando no Monitor Serial (9600 baud, "Nova linha") e veja

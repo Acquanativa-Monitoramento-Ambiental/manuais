@@ -1,6 +1,6 @@
 """
-Fala com os módulos I²C Acquanativa (ACQUA-OD, ACQUA-pH, ACQUA-ORP; placas
-AN-PCB, firmware 1.1) a partir de um Raspberry Pi ou outro Linux com I²C.
+Fala com os módulos I²C Acquanativa (ACQUA-OD, ACQUA-pH, ACQUA-ORP; módulos
+AcquaKit, firmware 1.1) a partir de um Raspberry Pi ou outro Linux com I²C.
 
 Uso:
     python3 acqua_i2c.py --procurar
