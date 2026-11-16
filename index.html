@@ -14,7 +14,7 @@
   main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
   header img { height: 3rem; }
   h1 { font-size: 1.6rem; margin: 1rem 0 .25rem; }
-  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .25rem; }
   p { margin: .5rem 0; }
   .muted, li span { color: var(--muted); font-size: .9rem; }
   ul { list-style: none; padding: 0; margin: 0; }
@@ -23,30 +23,63 @@
   a { color: var(--link); }
   li a { font-weight: 600; text-decoration: none; }
   li a:hover { text-decoration: underline; }
+  .more { margin-top: .75rem; font-size: .95rem; }
 </style>
 </head>
 <body>
 <main>
   <header><img src="logo.png" alt="Acquanativa"></header>
   <h1>Manuais dos equipamentos</h1>
-  <p class="muted">Versão atual de cada manual. Atualizado em 16/10/2026.</p>
-  <ul>
-      <li><a href="pdf/AcquaLink.pdf">AcquaLink</a><span>12 páginas · 235 KB</span></li>
-      <li><a href="pdf/AcquaMeter.pdf">AcquaMeter</a><span>11 páginas · 229 KB</span></li>
-      <li><a href="pdf/AcquaProbe-APE.pdf">AcquaProbe-APE</a><span>12 páginas · 203 KB</span></li>
-      <li><a href="pdf/AcquaProbe-AQ.pdf">AcquaProbe-AQ</a><span>15 páginas · 306 KB</span></li>
-      <li><a href="pdf/AcquaSensor.pdf">AcquaSensor</a><span>12 páginas · 586 KB</span></li>
-      <li><a href="pdf/AcquaSensor-Clorofila.pdf">AcquaSensor Clorofila</a><span>13 páginas · 269 KB</span></li>
-      <li><a href="pdf/AcquaSensor-CO2.pdf">AcquaSensor CO2</a><span>13 páginas · 586 KB</span></li>
-      <li><a href="pdf/AcquaSensor-Cor.pdf">AcquaSensor Cor</a><span>15 páginas · 565 KB</span></li>
-      <li><a href="pdf/AcquaSensor-Turbidez.pdf">AcquaSensor Turbidez</a><span>13 páginas · 574 KB</span></li>
-  </ul>
+  <p class="muted">Versão atual de cada manual, por família de produto. Atualizado em 16/11/2026.
+     <a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/archive/refs/heads/main.zip">Baixar tudo (.zip)</a></p>
 
-  <h2>Exemplos em Python</h2>
-  <p>14 scripts comentados para procurar, ler, mudar o endereço e calibrar
-     AcquaSensor, OD óptico, AcquaProbe-AQ e AcquaLink.</p>
-  <p><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/tree/main/python">Ver os scripts e as instruções</a>
-     · <a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/archive/refs/heads/main.zip">Baixar tudo (.zip)</a></p>
+  <h2>AcquaLink e AcquaMeter</h2>
+  <p class="muted">Controlador e registrador AcquaLink, medidor AcquaMeter e mapa SCADA.</p>
+  <ul>
+      <li><a href="acqualink/AcquaLink.pdf">AcquaLink</a><span>12 páginas · 235 KB</span></li>
+      <li><a href="acqualink/AcquaMeter.pdf">AcquaMeter</a><span>11 páginas · 229 KB</span></li>
+      <li><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/blob/main/acqualink/MAPA_SCADA.md">Mapa de registros SCADA</a><span>para integradores</span></li>
+  </ul>
+  <p class="more"><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/tree/main/acqualink">Exemplos de código e instruções</a></p>
+
+  <h2>AcquaSensor</h2>
+  <p class="muted">Sensores digitais RS-485: pH, OD, condutividade, ORP, turbidez, CO₂, cor e clorofila.</p>
+  <ul>
+      <li><a href="acquasensor/AcquaSensor.pdf">AcquaSensor</a><span>12 páginas · 586 KB</span></li>
+      <li><a href="acquasensor/AcquaSensor-Clorofila.pdf">AcquaSensor Clorofila</a><span>13 páginas · 269 KB</span></li>
+      <li><a href="acquasensor/AcquaSensor-CO2.pdf">AcquaSensor CO2</a><span>13 páginas · 586 KB</span></li>
+      <li><a href="acquasensor/AcquaSensor-Cor.pdf">AcquaSensor Cor</a><span>15 páginas · 565 KB</span></li>
+      <li><a href="acquasensor/AcquaSensor-Turbidez.pdf">AcquaSensor Turbidez</a><span>13 páginas · 574 KB</span></li>
+      <li><a href="acquasensor/AcquaSensor-Turbidez-Autolimpante.pdf">AcquaSensor Turbidez Autolimpante</a><span>10 páginas · 199 KB</span></li>
+  </ul>
+  <p class="more"><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/tree/main/acquasensor">Exemplos de código e instruções</a></p>
+
+  <h2>AcquaProbe</h2>
+  <p class="muted">Sondas multiparâmetros AcquaProbe-AQ e AcquaProbe-APE.</p>
+  <ul>
+      <li><a href="acquaprobe/AcquaProbe-APE.pdf">AcquaProbe-APE</a><span>12 páginas · 203 KB</span></li>
+      <li><a href="acquaprobe/AcquaProbe-AQ.pdf">AcquaProbe-AQ</a><span>15 páginas · 306 KB</span></li>
+  </ul>
+  <p class="more"><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/tree/main/acquaprobe">Exemplos de código e instruções</a></p>
+
+  <h2>Módulos I²C (AN-PCB)</h2>
+  <p class="muted">ACQUA-OD, ACQUA-pH e ACQUA-ORP: interfaces de eletrodo com saída I²C para Arduino, ESP32 e Raspberry Pi.</p>
+  <ul>
+      <li><a href="an-pcb/ACQUA-OD.pdf">ACQUA-OD</a><span>14 páginas · 225 KB</span></li>
+      <li><a href="an-pcb/ACQUA-ORP.pdf">ACQUA-ORP</a><span>12 páginas · 205 KB</span></li>
+      <li><a href="an-pcb/ACQUA-pH.pdf">ACQUA-pH</a><span>14 páginas · 209 KB</span></li>
+  </ul>
+  <p class="more"><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/tree/main/an-pcb">Exemplos de código e instruções</a></p>
+
+  <h2>AcquaShield</h2>
+  <p class="muted">Shields para Arduino (AcquaKit). Manuais Rev. 00, ainda sem exemplos.</p>
+  <ul>
+      <li><a href="acquashield/AcquaShield-EC.pdf">AcquaShield EC (Rev. 00)</a><span>7 páginas · 231 KB</span></li>
+      <li><a href="acquashield/AcquaShield-OD.pdf">AcquaShield OD (Rev. 00)</a><span>5 páginas · 214 KB</span></li>
+      <li><a href="acquashield/AcquaShield-ORP.pdf">AcquaShield ORP (Rev. 00)</a><span>4 páginas · 207 KB</span></li>
+      <li><a href="acquashield/AcquaShield-pH.pdf">AcquaShield pH (Rev. 00)</a><span>6 páginas · 218 KB</span></li>
+  </ul>
+  <p class="more"><a href="https://github.com/Acquanativa-Monitoramento-Ambiental/manuais/tree/main/acquashield">Ver a pasta</a></p>
 
   <h2>Suporte</h2>
   <p><a href="mailto:suporte@acquanativa.com.br">suporte@acquanativa.com.br</a></p>
